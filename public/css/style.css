@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto&family=Yuji+Boku&display=swap" rel="stylesheet"');
+
+:root {
+	--dark-color-a: #a02337;
+	--dark-color-b: #7386ff;
+	--light-color: hsl(0, 0%, 100%);
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+	--grey-color-a:  #EEEEEE;
+	--dark-color-c:#ddab06;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*use to design the height and width*/
+body {
+	font-family: 'Yuji Boku', serif;
+	font-size: 12px;
+	background: var(--grey-color-a);
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+	font-family: 'Oxygen', sans-serif;
+	border-style: solid ;
+	border-color: var(--dark-color-a);
+	font-size: 18px;
+	max-width: 1100px;
+	background: #fff;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.chat-header {
+	background: var(--light-color);
+	border-color: var(--grey-color-a);
+	border-bottom-style: solid;
+	font-family: 'Yuji Boku', serif;
+	color: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size: 12px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	font-family:'Yuji Boku', serif ;
+	background: var(--light-color);
+	color:var(--dark-color-a);
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-family: 'Roboto', sans-serif ;
+	font-size: 20px;
+	background: var(--light-color);
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	font-family: 'Roboto', sans-serif ;
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-a);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+.chat-messages .message .beta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-c);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .theta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(#000000);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+.chat-messages .message .meta span {
+	color: #777;
+}
+.chat-messages .message .beta span {
+	color: #777;
+}
+.chat-messages .message .theta span {
+	color: #777;
+}
+.chat-form-container {
+	padding: 20px 30px;
+	border-top: solid;
+	border-color: var(--grey-color-a);
+	background-color: var(--light-color);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+.file {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	background: url('./image/wechat-sprit.png') no-repeat -120px -432px;
+}
+.file label {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	cursor: pointer;
+	background: rgb(255, 255, 255);
+  }
+  
+  
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	color:var(--dark-color-a);
+	background: var(--light-color);
+	border-bottom: solid;
+	border-color: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--light-color);
+	color:var(--dark-color-a);
+	font-size: 20px;
+}
+
+.join-main p {
+	margin-bottom: 20px;
+	
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+	
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-family:'Roboto', sans-serif ;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+	border:solid;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
